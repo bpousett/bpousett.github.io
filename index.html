@@ -6,11 +6,106 @@
 		<title>Brendan Pousett</title>
 		<link href="styles/style.css"  rel="stylesheet" />
 	</head>
+
 	<body>
-		<h1>My Website Test</h1>
+		<h1>Brendan Pousett's CV</h1>
+		<div class="row">
+			<div class="column30">
+				<img src="./assets/headshot.png" width="280px">
+			</div>
+			<div class="column70">
+				<h2>Details:</h2>
+				<table>
+					<tr>
+						<th>Title:</th>
+						<td>PhD Student</td>
+					</tr>
+					<tr>
+						<th>Affiliation:</th>
+						<td><a href="https://www.mech.kuleuven.be/en/pma/research/robotics/"> Robotics Research Group</a>, KU Leuven</td>
+					</tr>
+					<tr>
+						<th>Email:</th>
+						<td>brendan.pousett@kuleuven.be</td>
+					</tr>
+					<tr>
+						<th>ORCID:</th>
+						<td><a href="https://orcid.org/0000-0002-8375-8452">0000-0002-8375-8452</a></td>
+					</tr>
+					<tr>
+						<th>Résumé:</th>
+						<td><a href="./assets/bpousett_cv_current.pdf">pdf</a></td>
+					</tr>
+					<tr>
+						<th>Publications:</th>
+						<td><a href="https://lirias.kuleuven.be/cv?Username=u0157853">link to lirias</a> (more coming soon 😀)</td>
+					</tr>
+				</table>
+
+				<p>
+					<b>Note:</b> I have not finished translating my previous, industry-focused résumé to the academic CV format, so I have linked it above. My <a href="https://blogs.ubc.ca/brendanpousett/">old website</a> has further details on projects I worked on before my PhD.
+				</p>
+			</div>
+		</div>
+
+		<h2>Biography and Research Interests</h2>
+		<p>
+			I received by B.A.Sc. from UBC in Engineering Physics in 2019, during which I completed internships at NZ Technologies, A&K Robotics, Tesla, and Genesis Motion Solutions. Upon graduating with academic distinction (Dean's Honour List, Trek Excellence Scholarship), I continued working with Genesis Motion, focused on designing, analysing, integrating, and testing novel geared-electric actuator technologies, in collaboration with partners such as HYUNDAI and Bastian Solutions. I developed a batch analysis tool which utilized a proprietary efficiency model and an evolutionary optimization algorithm to generate and simulate actuator design variants. This resulted in a 1000x speedup of our simulation process, and improved the operating efficiency of prototypes by a factor of 2.
+		</p>
 
 		<p>
-			Coming Soon...
+			After a strong focus on industry, I began my academic career as a PhD student at KU Leuven in 2023, supervised by <a href="https://u0011821.pages.gitlab.kuleuven.be/">Prof. Herman Bruyninckx</a> and <a href="https://www.kuleuven.be/wieiswie/en/person/00052672">Dr. Wilm Decré</a>, focused on mechanical design and model-based control of robots for structural masonry and prefabricated building panel installation. My interests lie in co-development of sensing and control methodologies on bespoke hardware. My motivation is to build low-cost prototypes which fulfill the correct accuracy requirements for an application, and are modelled by quasi-linear systems. I seek to combine these with convex optimization-based controllers which are robust to disturbances.
 		</p>
+		
+		<h2>Technical Skills</h2>
+		<ul>
+			<li><b>Programming: </b>Python, C/C++, CMake, TwinCAT3 Structured Text, MATLAB, Julia</li>
+			<li><b>Robotics Communication Tools: </b>LCM, ROS2/MicroROS, Protobuf, EtherCAT, CAN</li>
+			<li><b>Model-Based Robotics/Optimization Tools: </b>Drake, Pinocchio, CasADi, Rockit</li>
+			<li><b>Commercial Robotics Platforms: </b>UR10, ABB YuMi, KUKA iiwa14, Unitree Go1, ODRI SOLO12</li>
+			<li><b>Mechanical Design: </b>Solidworks, Onshape, Fusion360, ASME Y14.5-2018 GD&T, Tolerance Stacks, Limits and Fits</li>
+			<li><b>Prototyping: </b>3D Printing, Laser/Waterjet Cutting, Sheet Metal Fabrication, 3 Axis Mill, Lathe</li>
+			<li><b>Scientific Computing: </b>Numpy, Scipy, Pandas, Sklearn</li>
+			<li><b>Mathematics: </b>Linear Algebra, Convex/Nonconvex Optimization, Lyapunov Analysis</li>
+			<li><b>Actuator Design: </b>Gear Design, Gearbox Efficiency Modelling, Actuator Lifecycle Testing</li>
+			<li><b>General Communication: </b>Office Suite, HTML, Reveal.js</li>
+		</ul>
+
+		<h2>Prototypes</h2>
+		<p>
+			As mentioned, I build my own robot prototypes when exploring new ideas. I find this valuable in giving me a holistic view of model-based robotics, because important model parameters (e.g. inertia, friction) can be optimized during the design phase for better control performance. Ultimately, I find robotics solutions most elegant when the hardware design and controller complement each other. Here are some systems I have built during my PhD research:
+		</p>
+		<ul>
+			<li><b>RINGO: </b>A planar 3dof arm (RRR) for impact-based, non-prehensile manipulation of large bricks. (In progress)</li>
+			<li><b>ELYSA Pick and Place Application:</b> (system integration only)</li>
+			<ul>
+				<li>Robot designed at VUB by others to maximize payload-to-mass ratio.</li>
+				<li></li>
+				<!-- https://researchportal.vub.be/en/projects/sbo-project-with-a-primary-economic-finality-aimed-at-the-transfe -->
+				 <!-- https://ieeexplore.ieee.org/document/10637090 -->
+			</ul>
+			<li><b>Unitree Go1 Modification for Manipulation:</b></li>
+			<li><b>3 Axis Gantry:</b></li>
+		</ul>
+
+		<h2>Teaching Assistant Work</h2>
+		<ul>
+			<li><a href="https://www.onderwijsaanbod.kuleuven.be/2024/syllabi/n/H01N0AN.htm#activetab=doelstellingen_idp56320">Motions and Vibrations</a>, Spring 2024</li>
+			<li><a href="https://rob.pages.gitlab.kuleuven.be/rob-teaching/arcs/">Advanced Robot Control Systems</a>, Fall 2024</li>
+			<ul>
+				<li>Mechanical design improvements, control interface development of <a href="https://open-dynamic-robot-initiative.github.io/">ODRI SOLO12</a> quadruped, integration with RealSense camera for vision.</li>
+			</ul>
+			<li><a href="https://repository.teneo.libis.be:443/delivery/DeliveryManagerServlet?dps_pid=IE19284692">Master's Thesis Mentor</a> for Jarnick Van As, 2023-2024</li>
+		</ul>
+
+		<h2>Graduate Coursework</h2>
+		<ul>
+			<li>Advanced Robot Control Systems, Fall 2022</li>
+			<li><a href="https://onderwijsaanbod.kuleuven.be/syllabi/e/H04U1CE.htm#activetab=doelstellingen_idp633824">Optimization of Mechatronics Systems</a>, Fall 2022</li>
+			<li><a href="https://www.onderwijsaanbod.kuleuven.be/2024/syllabi/e/H02D2AE.htm#activetab=doelstellingen_idp594544">Uncertainty in Artificial Intelligence</a>, Fall 2022</li>
+			<li><a href="https://www.onderwijsaanbod.kuleuven.be/syllabi/e/H0E76AE.htm#activetab=doelstellingen_idp40080">Model Predictive Control</a>, Fall 2023</li>
+			<li><a href="https://manipulation.csail.mit.edu/">Robotic Manipulation</a> (self-directed), 2023</li>
+			<li><a href="https://underactuated.csail.mit.edu/">Underactuated Robotics</a> (self-directed), 2024</li>
+		</ul>
 	</body>
 </html>

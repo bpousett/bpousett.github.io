@@ -54,7 +54,7 @@
 		</p>
 
 		<p>
-			After a strong focus on industry, I began my academic career as a PhD student at KU Leuven in 2023, supervised by <a href="https://u0011821.pages.gitlab.kuleuven.be/">Prof. Herman Bruyninckx</a> and <a href="https://www.kuleuven.be/wieiswie/en/person/00052672">Dr. Wilm Decré</a>, focused on mechanical design and model-based control of robots for structural masonry and prefabricated building panel installation. My interests lie in co-development of sensing and control methodologies on bespoke hardware. My motivation is to build low-cost prototypes which fulfill the correct accuracy requirements for an application, and are modelled by quasi-linear systems. I seek to combine these with convex optimization-based controllers which are robust to disturbances.
+			After a strong focus on industry, I began my academic career as a PhD student at KU Leuven in 2023, supervised by <a href="https://u0011821.pages.gitlab.kuleuven.be/">Prof. Herman Bruyninckx</a> and <a href="https://www.kuleuven.be/wieiswie/en/person/00052672">Dr. Wilm Decré</a>, focused on mechanical design and model-based control of robots for <a href="https://youtu.be/4x8aTWKcL5s">paving</a>, <a href="https://youtu.be/RDa-CBaU2Ws?feature=shared&t=143">structural masonry</a>, and prefabricated building panel installation. My interests lie in co-development of sensing and control methodologies on bespoke hardware. My motivation is to build low-cost prototypes which fulfill the correct accuracy requirements for an application, and are modelled by quasi-linear systems. I seek to combine these with convex optimization-based controllers which are robust to disturbances.
 		</p>
 		
 		<h2>Technical Skills</h2>
@@ -73,19 +73,30 @@
 
 		<h2>Prototypes</h2>
 		<p>
-			As mentioned, I build my own robot prototypes when exploring new ideas. I find this valuable in giving me a holistic view of model-based robotics, because important model parameters (e.g. inertia, friction) can be optimized during the design phase for better control performance. Ultimately, I find robotics solutions most elegant when the hardware design and controller complement each other. Here are some systems I have built during my PhD research:
+			I build my own robot prototypes, which gives me a holistic view of model-based robotics. Model parameters can be optimized during the design phase for better control performance, and the most elegant solutions occur when hardware and control complement each other. Here are some systems I have built during my PhD research:
 		</p>
 		<ul>
-			<li><b>RINGO: </b>A planar 3dof arm (RRR) for impact-based, non-prehensile manipulation of large bricks. (In progress)</li>
-			<li><b>ELYSA Pick and Place Application:</b> (system integration only)</li>
+			<li>RINGO (in progress), 2025</li>
 			<ul>
-				<li>Robot designed at VUB by others to maximize payload-to-mass ratio.</li>
-				<li></li>
-				<!-- https://researchportal.vub.be/en/projects/sbo-project-with-a-primary-economic-finality-aimed-at-the-transfe -->
-				 <!-- https://ieeexplore.ieee.org/document/10637090 -->
+				<li>A planar 3dof (RRR) arm for impact-based manipulation of heavy, cable-actuated payloads.</li>
+				<li>Constructed from COTS industrial components and a few machined parts.</li>
+				<li>Design and prototyping in progress. Targeting open-source release.</li>
 			</ul>
-			<li><b>Unitree Go1 Modification for Manipulation:</b></li>
-			<li><b>3 Axis Gantry:</b></li>
+			<li>ELYSA (<a href="https://youtu.be/fqYrswfjPUY">pick and place</a>, <a href="https://youtu.be/dQG0NqRFV4o">suction integration</a> only), 2024</li>
+			<ul>
+				<li>Robot designed (<a href="https://ieeexplore.ieee.org/document/10637090">by others</a>) to maximize payload-to-mass ratio.</li>
+				<li>Created (with Boris Deroo) pick and place demonstration with passive gripper, suction, for industrial partners.</li>
+			</ul>
+			<li><a href="https://youtu.be/tzBYCHqDv4Q">Unitree Go1 Modification for Manipulation</a>, 2024</li>
+			<ul>
+				<li>I created a low inertia, torque-controlled, bimanual manipulation system for box pushing/flipping maneuvers from the Go1.</li>
+				<li>Conversion process is fully reversible, and requires no modifications to control interface.</li>
+			</ul>
+			<li><a href="./assets/setup.pdf">3 Axis Gantry Crane</a>, 2023</li>
+			<ul>
+				<li>Developed to research out-of-workspace casting manipulation, dynamic maneuvers, and grasping dexterity of single cable robots (paper by colleague coming soon).</li>
+				<li>Consists of a flat (2 axis) gantry from IGUS, a custom, backdrivable hoist actuator with an integrated brake, a custom control system, a camera, and a ceiling mount system.</li>
+			</ul>
 		</ul>
 
 		<h2>Teaching Assistant Work</h2>
